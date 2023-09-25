@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker bild -t ooje/docker-react:v1 -f Dockerfile.dev .
+  - docker build -t ooje/docker-react:v1 -f Dockerfile.dev .
 
 script:
-  - dokcer run ooje/docker-react:v1 npm run test -- --coveraged
+  - docker run ooje/docker-react:v1 npm run test -- --coveraged
