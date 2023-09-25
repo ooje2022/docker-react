@@ -6,4 +6,4 @@ before_install:
   - docker build -t ooje/docker-react:v1 -f Dockerfile.dev .
 
 script:
-  - docker run ooje/docker-react:v1 npm run test -- --coveraged
+  - docker run ooje/docker-react:v1 npm run test -- --coverage
